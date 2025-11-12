@@ -721,6 +721,7 @@ class Authentication:
             if self._debug is True:
                 print('Data request failed: ' +
                       self._get_error_message(error_code, api_name))
+                print(f'response body:\n{response.text}')
 
             if USE_EXCEPTIONS:
                 # Download station error:
